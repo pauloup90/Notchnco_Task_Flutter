@@ -183,7 +183,7 @@ class _PopularMoviesViewState extends State<_PopularMoviesView> {
             margin: const EdgeInsets.only(right: 12),
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             decoration: BoxDecoration(
-              color: theme.colorScheme.surfaceVariant,
+              color: theme.colorScheme.surfaceContainerHighest,
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
                 color: theme.colorScheme.outlineVariant.withOpacity(0.5),

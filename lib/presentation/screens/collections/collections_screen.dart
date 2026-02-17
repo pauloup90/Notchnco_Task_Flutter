@@ -107,7 +107,7 @@ class _CollectionsView extends StatelessWidget {
                       collection.name,
                       style: theme.textTheme.titleLarge?.copyWith(
                         fontWeight: FontWeight.bold,
-                        color: theme.colorScheme.onBackground,
+                        color: theme.colorScheme.onSurface,
                       ),
                     ),
                     if (collection.overview.isNotEmpty)
@@ -116,7 +116,7 @@ class _CollectionsView extends StatelessWidget {
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: theme.textTheme.bodySmall?.copyWith(
-                          color: theme.colorScheme.onBackground.withOpacity(0.6),
+                          color: theme.colorScheme.onSurface.withOpacity(0.6),
                         ),
                       ),
                   ],
@@ -171,11 +171,11 @@ class _CollectionsView extends StatelessWidget {
                 imageUrl: posterUrl,
                 fit: BoxFit.cover,
                 placeholder: (context, url) => Container(
-                  color: theme.colorScheme.surfaceVariant,
+                  color: theme.colorScheme.surfaceContainerHighest,
                   child: const Center(child: CircularProgressIndicator()),
                 ),
                 errorWidget: (context, url, error) => Container(
-                  color: theme.colorScheme.surfaceVariant,
+                  color: theme.colorScheme.surfaceContainerHighest,
                   child: const Icon(Icons.movie_outlined),
                 ),
               ),
